@@ -1,0 +1,36 @@
+# Package Overview
+package_name: UCIDrugReview_model
+
+# Data Files
+training_data_file: drugsComTrain_raw10row.csv
+
+# Variables
+# The variable we are attempting to predict (cnt)
+target: rating
+
+pipeline_name: UCIDrugReview_model
+pipeline_save_file: UCIDrugReview_model_output_vC
+
+# Features that will go inside processing pipeline
+features:
+  - review
+  
+unused_fields:  # Features to drop before pipeline
+  - uniqueID
+  - drugName
+  - condition
+  - date
+  - usefulCount
+
+# Features names
+review_var: review
+  
+# Set train/test split
+test_size: 0.2
+
+# Set the random seed
+random_state: 108
+
+# Alogrithm parameters
+n_estimators: 100
+max_depth: 10
