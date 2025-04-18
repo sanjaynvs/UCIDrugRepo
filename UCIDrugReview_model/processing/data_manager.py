@@ -15,7 +15,7 @@ from sklearn.pipeline import Pipeline
 
 from UCIDrugReview_model import __version__ as _version
 from UCIDrugReview_model.config.core import DATASET_DIR, TRAINED_MODEL_DIR, config
-from transformers import BertTokenizer, BertModel
+#from transformers import BertTokenizer, BertModel
 
 
 def pre_pipeline_preparation(*, data_frame: pd.DataFrame) -> pd.DataFrame:

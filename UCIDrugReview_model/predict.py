@@ -13,6 +13,7 @@ from UCIDrugReview_model.config.core import config
 from UCIDrugReview_model.processing.data_manager import load_pipeline
 from UCIDrugReview_model.processing.data_manager import pre_pipeline_preparation
 from UCIDrugReview_model.processing.validation import validate_inputs
+from UCIDrugReview_model.config.core import DATASET_DIR, TRAINED_MODEL_DIR, config
 
 
 pipeline_file_name = f"{config.app_config_.pipeline_save_file}{_version}.pkl"
@@ -45,7 +46,8 @@ def make_prediction(*, input_data: Union[pd.DataFrame, dict]) -> dict:
 
 
 if __name__ == "__main__":
-    testData = pd.read_csv('datasets/drugsComTrain_raw5row.csv')
+   
+    testData = pd.read_csv(DATASET_DIR / 'drugsComTrain_raw5row.csv')
     
     
     data_in = {'uniqueID': testData['uniqueID'], 'drugName': testData['drugName'], 'condition': testData['condition'], 'review': testData['review'], 'date': testData['date'],

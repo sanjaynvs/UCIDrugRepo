@@ -2,7 +2,8 @@
 package_name: UCIDrugReview_model
 
 # Data Files
-training_data_file: drugsComTrain_raw10row.csv
+#training_data_file: drugsComTrain_raw10row.csv
+training_data_file: drugsComTrain_raw.csv
 
 # Variables
 # The variable we are attempting to predict (cnt)
