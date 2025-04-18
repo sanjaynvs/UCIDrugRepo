@@ -23,5 +23,5 @@ jobs:
       - name: Run Docker Container
         env: 
           DOCKER_USER: ${{ secrets.DOCKERHUB_USERNAME }}
-        run: sudo docker run -it -d -p 8001:8001 --name ucidrugreview_flask_app-container $DOCKER_USER/ucidrugreview_flask_app:latest
+        run: sudo docker run -it -d -p 8000:8000 --name ucidrugreview_flask_app-container $DOCKER_USER/ucidrugreview_flask_app:latest
 
