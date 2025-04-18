@@ -10,7 +10,8 @@ from pathlib import Path
 from werkzeug.utils import secure_filename
 
 # Add the root directory to sys.path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+#sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+#sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from UCIDrugReview_model.predict import make_prediction
 
 app = Flask(__name__)

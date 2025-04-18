@@ -1,0 +1,18 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./UCIDrugReview_model *
+
+include UCIDrugReview/datasets/drugsComTrain_raw.csv
+include UCIDrugReview/datasets/drugsComTest_raw.csv
+include UCIDrugReview/trained_models/*.pkl
+include UCIDrugReview/VERSION
+include UCIDrugReview/config.yml
+
+include ./requirements/requirements.txt
+include ./requirements/test_requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
