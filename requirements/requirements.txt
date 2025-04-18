@@ -5,4 +5,4 @@ pydantic==2.10.5
 ruamel.yaml==0.18.10
 scikit-learn==1.6.1
 strictyaml==1.7.3
-flask==2.3.3
+flask==2.3.3 
